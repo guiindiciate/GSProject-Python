@@ -1,0 +1,54 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Aplicação</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/classificar">CLASSIFICAR</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+    <h2 style="text-align: center;">Modelo de treinamento supervisionado para classificação de doenças de pele</h2>
+
+    <h3>Documentação</h3>
+
+    <p>Realiza a classificação da doença de pele que o usuário enviar.</p>
+    <p><strong>Método:</strong> POST</p>
+
+    <p><strong>URL:</strong> /classificar</p>
+
+    <p><strong>Descrição:</strong> Classificar uma imagem de acordo com os detalhes fornecidos.</p>
+
+    <p><strong>Corpo da Requisição:</strong></p>
+    <pre>
+{
+    "nome": "Nome Completo",
+    "imagem": [arquivo da imagem]
+}
+            </pre>
+
+    <p><strong>Resposta de Sucesso:</strong> Código 200 (OK)</p>
+    <pre>
+{
+    "nome": "Matheus Leite",
+    "classe_predita": "Dermatite Atópica"
+}
+            </pre>
+    </div>
+    {% endblock %}
+
+</body>
+
+</html>

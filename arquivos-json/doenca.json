@@ -1,0 +1,13 @@
+{
+    "Nome": "Carcinoma de c\u00e9lulas escamosas",
+    "Desc": "O carcinoma de c\u00e9lulas escamosas \u00e9 um tipo de c\u00e2ncer de pele que se origina nas c\u00e9lulas escamosas da epiderme. Pode se manifestar como uma les\u00e3o elevada e com crostas.",
+    "Sintomas": [
+        "N\u00f3dulos ou caro\u00e7os na pele.",
+        "Feridas que n\u00e3o cicatrizam.",
+        "Altera\u00e7\u00f5es na textura da pele."
+    ],
+    "Tratamentos": [
+        "Cirurgia para remover as les\u00f5es cancer\u00edgenas.",
+        "Radioterapia para destruir as c\u00e9lulas cancer\u00edgenas."
+    ]
+}
